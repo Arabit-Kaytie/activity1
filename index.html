@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<body style="background-color:#00fffa"> 
+</body>
+
+<h1>Programming Activity #1</h1>
+<h2>IT Electives 4</h2>
+
+
+<div ng-app="" ng-init="names=[
+{name:'Apple',variation:'jonahgold' , color: 'red'},
+{name:'Banana',variation:'lakatan' , color: 'red.'},
+{name:'Cherry',variation:'surinam' , color: 'red.'},
+{name:'Durian',variation:'jailolo' , color: 'green.'},
+{name:'Elder Berry',variation:'foilage' , color: 'purple.'},
+{name:'Fig',variation:'fiddle leaf' , color: 'green.'},
+{name:'Grapes',variation:'caulerfa lentillefera' , color: 'purple red.'},
+{name:'Horned Melon',variation:'metulirefus' , color: 'green.'},
+{name:'Ita Palm',variation:'palm' , color: 'purple.'},
+{name:'Durian',variation:'palm' , color: 'green yellow.'},
+{name:'JackFruit',variation:'Fruit' , color: 'green yellow.'},
+{name:'Kiwi',variation:'seedless' , color: 'brown.'},
+{name:'Lychee',variation:'pai la li chi' , color: 'red.'},
+{name:'Orange',variation:'Citrullus colocynthis' , color: 'orange.'},
+{name:'Tomato',variation:'Cherry' , color: 'red.'}]">
+
+<div ng-app="">
+
+<p>Name: <input type="text" ng-model="name"></p>
+<p>The Name : {{ name }}</p>
+
+
+<p>Enter you Address: <input type="text" ng-model="add"></p>
+<p>The Adress : {{ add }}</p>
+
+<p>Enter your School : <input type="text" ng-model="shs"></p>
+<p>The College is: {{ shs }}</p>
+
+<p>Enter your Course: <input type="text" ng-model="course"></p>
+<p>The College is: {{ course }}</p>
+
+<h2> <p style="color:#0F1212"> FRUITS </p>  
+    <p font size="5px"></p>
+<ol>
+  <li ng-repeat="p in names">
+  {{ 'Name: ' + p.name + ', ' + 'Variation: ' + p.variation + ', ' + 'Color: ' + p.color }}</li>
+</ol>
+
+</div>
+
+</body>
+</html>
